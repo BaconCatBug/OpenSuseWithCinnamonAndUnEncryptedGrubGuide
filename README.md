@@ -29,6 +29,4 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 1. Boot to the USB Stick, select the ISO, and wait for the installer to load.
 1. Select Installation
 
-![alt text][logo]
-
-[logo]: https://i.imgur.com/cMJQZpy.png 
+<img src="https://i.imgur.com/cMJQZpy.png" width=50% height=50%>
