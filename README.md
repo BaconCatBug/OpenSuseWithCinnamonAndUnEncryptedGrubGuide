@@ -29,8 +29,11 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 3) Boot to the USB Stick, select the ISO, and wait for the installer to load.
 4) Select Installation
 
-![alt text][install]
+![][Installation]
 
-5) dawdawd
+5) Choose your Language and test your keyboard layout
 
-[install]: https://i.imgur.com/cMJQZpy.png 
+![][Language]
+
+[Installation]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/1-Installation.png?raw=true 
+[Language]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/2-Language.png?raw=true 
