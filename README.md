@@ -22,6 +22,5 @@ Also Note: While I will be comprehensive, I will assume you know how to do some 
 Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it has a 64bit CPU and supports and is in UEFI boot mode. 
 
 1. Download the latest openSUSE Tumbleweed **Network Image** if you'll have internet access while installing (e.g. it's got an ethernet cable). Otherwise grab the **Offline Image**. At the time of writing they can be found at https://get.opensuse.org/tumbleweed/
-
-..- You want the *Intel or AMD 64-bit desktops, laptops, and servers (x86_64)* images. If you don't need this one, you'll know and probably won't need this guide.
+- You want the *Intel or AMD 64-bit desktops, laptops, and servers (x86_64)* images. If you don't need this one, you'll know and probably won't need this guide.
 1. Grab a USB stick of some description that you can plug into your PC and put the ISO onto the USB stuck using your fav
