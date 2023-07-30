@@ -25,4 +25,10 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
    You want the *Intel or AMD 64-bit desktops, laptops, and servers (x86_64)* images. If you don't need this one, you'll know, and probably won't need this guide.
    
-1. Grab a USB stick of some description that you can plug into your PC and put the ISO onto the USB stuck using your fav
+1. Grab a USB stick of some description that you can afford to format and put the ISO onto the USB stuck using your favourite method of doing so. I personally recommend Ventoy https://www.ventoy.net/
+1. Boot to the USB Stick, select the ISO, and wait for the installer to load.
+1. Select Installation
+
+![alt text][logo]
+
+[logo]: https://i.imgur.com/cMJQZpy.png 
