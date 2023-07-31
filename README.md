@@ -23,8 +23,8 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 1) Download the latest openSUSE Tumbleweed **Network Image** if you'll have internet access while installing (e.g. it's got an ethernet cable). Otherwise grab the **Offline Image**. At the time of writing they can be found at https://get.opensuse.org/tumbleweed/
 
-   You want the *Intel or AMD 64-bit desktops, laptops, and servers (x86_64)* images. If you don't need this one, you'll know, and probably won't need this guide.
-   
+ You want the *Intel or AMD 64-bit desktops, laptops, and servers (x86_64)* images. If you don't need this one, you'll know, and probably won't need this guide.
+ 
 2) Grab a USB stick of some description that you can afford to format and put the ISO onto the USB stuck using your favourite method of doing so. I personally recommend Ventoy https://www.ventoy.net/
 3) Boot to the USB Stick, select the ISO, and wait for the installer to load.
 
@@ -81,16 +81,65 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 ![][Install]
 
-[Installation]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/1-Installation.png?raw=true 
-[Language]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/2-Language.png?raw=true 
-[SayNo]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/3-SayNo.png?raw=true 
-[Gnome]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/4-Gnome.png?raw=true 
-[Existing]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/5-Existing.png?raw=true 
-[EmptyDrive]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/6-EmptyDrive.png?raw=true 
-[FirstPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/7-FirstPart.png?raw=true 
-[SecondPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/8-SecondPart.png?raw=true 
-[ThirdPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/9-ThirdPart.png?raw=true 
-[Encrypt]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/10-Encrypt.png?raw=true 
-[Accept]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/11-Accept.png?raw=true 
-[Account]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/12-Account.png?raw=true 
-[Install]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/13-Install.png?raw=true 
+15) Wait for it to install, then reboot and boot from the hard drive. You'll be prompted for your encryption password. 
+
+![][Password]
+
+# The Return of Cinnamon's Revenge: The Tweakening - Armageddon
+
+16) Close the Welcome Window. Click the Activities button in the top left and open Firefox. Go to https://software.opensuse.org/package/cinnamon and scroll down to the Tumbleweed header. Click **Show Community Package** and click **Expert Download** for the *home:Dead_Mozay:cinnamon* entry.
+
+![][Software]
+
+17) Click **Add repository and install manually** and copy the first *addrepo* command. Click Activities. Search for Terminal. Open the terminal. Type **sudo{space}** then press Control+Shift+V to paste the text into the terminal and hit enter to run it. It will prompt you for your user password (the short one, and won't show anything when typing).
+
+![][Repo]
+
+18) Run the command in the terminal **sudo zypper ref**, when prompted about the key, press *a* then enter to always trust the key.
+
+![][Refresh]
+
+19) Run the command in the terminal **sudo zypper in -n cinnamon xed blueman opi**
+
+![][InstallCinnamon]
+
+20) Log out back to the login screen. Click the **Power icon** in the top right, then the **power icon** underneath that, then click **Log Out**, then click **Log Out** again (Gnome sure loves doubling up on everything!)
+
+21) At the login screen, click your user name, it will prompt you for your password. In the bottom right, there is a cogwheel button. Click that, then click Cinnamon. Then put in your password, and hit enter to log in.
+
+![][SetDE]
+
+22) Open a terminal. Run the command **sudo zypper -n rm gnome-text-editor nautilus**
+
+![][CleanUp]
+
+23) Run the command **opi codecs**. Press *y* then enter for each y/n prompt. When it asks about trusting keys, again press *a* and enter.
+
+![][OpiCodecs]
+
+24) ***=][= OPTIONAL BUT RECCOMENDED =][= ***
+
+xx) Run the command **sudo zypper dup**, let it all install. Then reboot.
+
+xx) And that should be all. You can now enjoy Cinnamon on openSUSE with a more user friendly encryption scheme.
+[Installation]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/1-Installation.png?raw=true 
+[Language]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/2-Language.png?raw=true 
+[SayNo]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/3-SayNo.png?raw=true 
+[Gnome]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/4-Gnome.png?raw=true 
+[Existing]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/5-Existing.png?raw=true 
+[EmptyDrive]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/6-EmptyDrive.png?raw=true 
+[FirstPart]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/7-FirstPart.png?raw=true 
+[SecondPart]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/8-SecondPart.png?raw=true 
+[ThirdPart]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/9-ThirdPart.png?raw=true 
+[Encrypt]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/10-Encrypt.png?raw=true 
+[Accept]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/11-Accept.png?raw=true 
+[Account]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/12-Account.png?raw=true 
+[Install]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/13-Install.png?raw=true 
+[Password]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/14-Password.png?raw=true 
+[Software]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/15-Software.png?raw=true 
+[Repo]:				https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/16-Repo.png?raw=true 
+[Refresh]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/17-Refresh.png?raw=true 
+[InstallCinnamon]:	https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/18-InstallCinnamon.png?raw=true 
+[SetDE]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/19-SetDE.png?raw=true
+[CleanUp]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/20-CleanUp.png?raw=true
+[OpiCodecs]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/21-OpiCodecs.png?raw=true
