@@ -117,7 +117,7 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 ![][OpiCodecs]
 
-24) ***=][= OPTIONAL BUT RECCOMENDED =][= ***
+24) ***=\]\[= OPTIONAL BUT RECCOMENDED =\]\[= ***
 
 xx) Run the command **sudo zypper dup**, let it all install. Then reboot.
 
