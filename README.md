@@ -139,7 +139,7 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 28) Run the command `sudo zypper -n dup`, let it all install. Then reboot.
 
-29) And that should be all. You can now enjoy Cinnamon on openSUSE with a more user friendly encryption scheme. My personal favourite applets are **Panel Launchers** by *panel-launchers<span>@</span>cinnamon.org*, **CobiWindowList** by *windowlist@cobinja.de*, **Collapsible Systray** by *collapsible-systray@feuerfuchs.eu*, and **Bash Sensors**.
+29) And that should be all. You can now enjoy Cinnamon on openSUSE with a more user friendly encryption scheme. My personal favourite applets are **Panel Launchers** by *panel-launchers<span>@</span>cinnamon.org*, **CobiWindowList** by *windowlist<span>@</span>cobinja.de*, **Collapsible Systray** by *collapsible-systray<span>@</span>feuerfuchs.eu*, and **Bash Sensors**.
 
 Take the time to customise the Nemo interface, the main Menu interface, and the panels. If you wish for a Chromium based browser rather than Firefox, I recommend Vivaldi (which can be installed in the terminal by `opi vivaldi`).
 
