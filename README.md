@@ -43,7 +43,7 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 ![][SayNo]
 
-7) Click the **Desktop with Gnome** radio button. Click **Next**.
+7) Click the **Desktop with Gnome** radio button. Click **Next**. (Why Gnome when we're installing Cinnamon later? Because it makes things easier, trust me. It installs a lot of basic other stuff that will help.)
 
 ![][Gnome]
 
@@ -78,6 +78,7 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 14) Set your Name, Username, and account password. Since you have boot encryption, it should be ok to set a short (even a single character) user password. It will complain about it being too short, just click **Yes**. Leave **Use this password for system administrator** on, and have Automatic Login set to your liking (I say leave it on, as you have on boot encryption). Now click **Next**, then click **Install** (twice).
 
 ![][Account]
+
 ![][Install]
 
 [Installation]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/1-Installation.png?raw=true 
@@ -86,10 +87,10 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 [Gnome]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/4-Gnome.png?raw=true 
 [Existing]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/5-Existing.png?raw=true 
 [EmptyDrive]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/6-EmptyDrive.png?raw=true 
-[FirstPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/7-FirstPart?raw=true 
-[SecondPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/8-SecondPart?raw=true 
-[ThirdPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/9-ThirdPart?raw=true 
-[Encrypt]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/10-Encrypt?raw=true 
-[Accept]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/11-Accept?raw=true 
-[Account]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/12-Account?raw=true 
-[Install]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/13-Install?raw=true 
+[FirstPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/7-FirstPart.png?raw=true 
+[SecondPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/8-SecondPart.png?raw=true 
+[ThirdPart]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/9-ThirdPart.png?raw=true 
+[Encrypt]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/10-Encrypt.png?raw=true 
+[Accept]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/11-Accept.png?raw=true 
+[Account]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/12-Account.png?raw=true 
+[Install]: https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/13-Install.png?raw=true 
