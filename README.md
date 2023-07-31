@@ -1,4 +1,4 @@
-# A guide on how to install OpenSUSE Tumbleweed with up-to-date Cinnamon Desktop Environment, an Unencrypted Grub Bootloader, and Encrypted Root Partition 
+# A step-by-step guide on how to install openSUSE Tumbleweed with up-to-date Cinnamon Desktop Environment, an Unencrypted Grub Bootloader, and Encrypted Root Partition 
 
 # Preamble
 
@@ -18,7 +18,7 @@ Also Note: While I will be comprehensive, I will assume you know how to do some 
 
 Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it has an x86_64 (aka a 64bit) CPU, supports UEFI and is in UEFI boot mode. 
 
-1) Download the latest openSUSE Tumbleweed **Network Image** if you'll have internet access while installing (e.g. it's got an ethernet cable). Otherwise grab the **Offline Image**. At the time of writing they can be found at https://get.opensuse.org/tumbleweed/
+1) Download the latest openSUSE Tumbleweed **Network Image** if you'll have internet access while installing (e.g. it's got an ethernet cable). Otherwise grab the **Offline Image**. At the time of writing they can be found at https://get.openSUSE.org/tumbleweed/
 
  You want the *Intel or AMD 64-bit desktops, laptops, and servers (x86_64)* images. If you don't need this one, you'll know, and probably won't need this guide.
  
@@ -84,7 +84,7 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 # The Return of Cinnamon's Revenge: The Tweakening - Armageddon
 
-16) Close the Welcome Window. Click the Activities button in the top left and open Firefox. Go to https://software.opensuse.org/package/cinnamon and scroll down to the Tumbleweed header. Click **Show Community Package** and click **Expert Download** for the *home:Dead_Mozay:cinnamon* entry.
+16) Close the Welcome Window. Click the Activities button in the top left and open Firefox. Go to https://software.openSUSE.org/package/cinnamon and scroll down to the Tumbleweed header. Click **Show Community Package** and click **Expert Download** for the *home:Dead_Mozay:cinnamon* entry.
 
 ![][Software]
 
@@ -159,24 +159,24 @@ If you wish to remove the Suspend, Sleep, and Hibernate options that may or may 
 `sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target`
 
 
-[Installation]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/1-Installation.png?raw=true 
-[Language]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/2-Language.png?raw=true 
-[SayNo]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/3-SayNo.png?raw=true 
-[Gnome]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/4-Gnome.png?raw=true 
-[Existing]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/5-Existing.png?raw=true 
-[EmptyDrive]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/6-EmptyDrive.png?raw=true 
-[FirstPart]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/7-FirstPart.png?raw=true 
-[SecondPart]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/8-SecondPart.png?raw=true 
-[ThirdPart]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/9-ThirdPart.png?raw=true 
-[Encrypt]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/10-Encrypt.png?raw=true 
-[Accept]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/11-Accept.png?raw=true 
-[Account]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/12-Account.png?raw=true 
-[Install]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/13-Install.png?raw=true 
-[Password]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/14-Password.png?raw=true 
-[Software]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/15-Software.png?raw=true 
-[Repo]:				https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/16-Repo.png?raw=true 
-[Refresh]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/17-Refresh.png?raw=true 
-[InstallCinnamon]:	https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/18-InstallCinnamon.png?raw=true 
-[SetDE]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/19-SetDE.png?raw=true
-[CleanUp]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/20-CleanUp.png?raw=true
-[OpiCodecs]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/21-OpiCodecs.png?raw=true
+[Installation]:		https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/1-Installation.png?raw=true 
+[Language]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/2-Language.png?raw=true 
+[SayNo]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/3-SayNo.png?raw=true 
+[Gnome]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/4-Gnome.png?raw=true 
+[Existing]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/5-Existing.png?raw=true 
+[EmptyDrive]:		https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/6-EmptyDrive.png?raw=true 
+[FirstPart]:		https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/7-FirstPart.png?raw=true 
+[SecondPart]:		https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/8-SecondPart.png?raw=true 
+[ThirdPart]:		https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/9-ThirdPart.png?raw=true 
+[Encrypt]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/10-Encrypt.png?raw=true 
+[Accept]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/11-Accept.png?raw=true 
+[Account]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/12-Account.png?raw=true 
+[Install]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/13-Install.png?raw=true 
+[Password]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/14-Password.png?raw=true 
+[Software]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/15-Software.png?raw=true 
+[Repo]:				https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/16-Repo.png?raw=true 
+[Refresh]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/17-Refresh.png?raw=true 
+[InstallCinnamon]:	https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/18-InstallCinnamon.png?raw=true 
+[SetDE]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/19-SetDE.png?raw=true
+[CleanUp]:			https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/20-CleanUp.png?raw=true
+[OpiCodecs]:		https://github.com/BaconCatBug/openSUSEWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/21-OpiCodecs.png?raw=true
