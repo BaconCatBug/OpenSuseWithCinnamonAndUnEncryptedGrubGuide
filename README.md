@@ -138,8 +138,3 @@ xx) And that should be all. You can now enjoy Cinnamon on openSUSE with a more u
 [Password]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/14-Password.png?raw=true 
 [Software]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/15-Software.png?raw=true 
 [Repo]:				https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/16-Repo.png?raw=true 
-[Refresh]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/17-Refresh.png?raw=true 
-[InstallCinnamon]:	https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/18-InstallCinnamon.png?raw=true 
-[SetDE]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/19-SetDE.png?raw=true
-[CleanUp]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/20-CleanUp.png?raw=true
-[OpiCodecs]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/21-OpiCodecs.png?raw=true
