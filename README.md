@@ -145,9 +145,13 @@ Take the time to customise the Nemo interface, the main Menu interface, and the 
 
 # Save your Eyeballs Here
 
-Assuming you're like me and prefer to not have your eyeballs burnt out when using your PC, you can now set the Cinnamon theme to a darker hue. Open the menu and search for *Themes*. Set each of the options to your liking, then go to the *Settings* tab at the top and set your Dark Mode, Icon, and Scrollbar settings to your liking.
+Assuming you're like me and prefer to not have your eyeballs burnt out when using your PC, you can now set the Cinnamon theme to a darker hue. Open the menu and search for *Themes*. Set each of the options to your liking, then go to the *Settings* tab at the top and set your *Dark Mode*, *Icon*, and *Scrollbar* settings to your liking.
 
-If you are using a dark mode theme, you should also run the command `gsettings set org.gnome.desktop.interface color-scheme prefer-dark` to allow any explicitly GTK themed apps to be in dark mode.
+If you are using a dark mode theme, you should also run the command 
+
+`gsettings set org.gnome.desktop.interface color-scheme prefer-dark` 
+
+to allow any explicitly GTK themed apps to be in dark mode.
 
 # Remove useless Power Options
 
