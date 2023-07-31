@@ -88,7 +88,7 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 ![][Software]
 
-17) Click **Add repository and install manually** and copy the first *addrepo* command. Click Activities. Search for Terminal. Open the terminal. Type `sudo{space` then press Control+Shift+V to paste the text into the terminal and hit enter to run it. It will prompt you for your user password (the short one, and won't show anything when typing).
+17) Click **Add repository and install manually** and copy the first *addrepo* command. Click Activities. Search for Terminal. Open the terminal. Type `sudo{space}` then press Control+Shift+V to paste the text into the terminal and hit enter to run it. It will prompt you for your user password (the short one, and won't show anything when typing).
 
 ![][Repo]
 
