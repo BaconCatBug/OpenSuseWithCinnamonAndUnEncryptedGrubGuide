@@ -91,35 +91,49 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 ![][Software]
 
-17) Click **Add repository and install manually** and copy the first *addrepo* command. Click Activities. Search for Terminal. Open the terminal. Type **sudo{space}** then press Control+Shift+V to paste the text into the terminal and hit enter to run it. It will prompt you for your user password (the short one, and won't show anything when typing).
+17) Click **Add repository and install manually** and copy the first *addrepo* command. Click Activities. Search for Terminal. Open the terminal. Type `sudo{space` then press Control+Shift+V to paste the text into the terminal and hit enter to run it. It will prompt you for your user password (the short one, and won't show anything when typing).
 
 ![][Repo]
 
-18) Run the command in the terminal **sudo zypper ref**, when prompted about the key, press *a* then enter to always trust the key.
+18) Run the command in the terminal `sudo zypper ref`, when prompted about the key, press *a* then enter to always trust the key.
 
 ![][Refresh]
 
-19) Run the command in the terminal **sudo zypper in -n cinnamon xed blueman opi**
+19) Run the command in the terminal `sudo zypper in -n cinnamon xed blueman opi`
 
 ![][InstallCinnamon]
 
-20) Log out back to the login screen. Click the **Power icon** in the top right, then the **power icon** underneath that, then click **Log Out**, then click **Log Out** again (Gnome sure loves doubling up on everything!)
+20) Log out back to the login screen. Click the **Power Icon** in the top right, then the **Power Icon** underneath that, then click **Log Out**, then click **Log Out** again (Gnome sure loves doubling up on everything!)
 
 21) At the login screen, click your user name, it will prompt you for your password. In the bottom right, there is a cogwheel button. Click that, then click Cinnamon. Then put in your password, and hit enter to log in.
 
 ![][SetDE]
 
-22) Open a terminal. Run the command **sudo zypper -n rm gnome-text-editor nautilus**
+22) Open a terminal. Run the command `sudo zypper -n rm gnome-text-editor nautilus`
 
 ![][CleanUp]
 
-23) Run the command **opi codecs**. Press *y* then enter for each y/n prompt. When it asks about trusting keys, again press *a* and enter.
+23) Run the command `opi codecs`. Press *y* then enter for each y/n prompt. When it asks about trusting keys, again press *a* and enter.
 
 ![][OpiCodecs]
 
-24) ***OPTIONAL BUT RECCOMENDED***
+24) ***OPTIONAL BUT RECCOMENDED*** We will now set up a Swap file to act as a Swap partition, to act as overflow if your RAM fills up. Conventional Wisdom is to make the Swap file the same size as the amount of RAM you have, but you can set it to whatever size you want really.
 
-xx) Run the command **sudo zypper dup**, let it all install. Then reboot.
+25) Run the command `df / -h` and see how much space you have under the *Avail* column. For obvious reasons, don't set the swap file bigger than this.
+
+26) Run the command `SIZE=4` where 4 is replaced by the number of gigabytes you want the Swap file to be.
+
+27) Copy the entire code block here, and paste it into the terminal with Control+Shift+V. The first `dd` command will take quite a while to complete, be patient and don't panic.
+
+```sh
+sudo dd if=/dev/zero of=/swapfile bs=1M count=$(($SIZE * 1024))
+sudo chmod 0600 /swapfile
+sudo mkswap /swapfile
+sudo sed -i '/swap/{s/^/#/}' /etc/fstab
+sudo tee -a /etc/fstab<<<"/swapfile  none  swap  sw 0  0"
+```
+
+xx) Run the command `sudo zypper dup`, let it all install. Then reboot.
 
 xx) And that should be all. You can now enjoy Cinnamon on openSUSE with a more user friendly encryption scheme.
 
