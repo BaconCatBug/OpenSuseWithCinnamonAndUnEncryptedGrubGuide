@@ -1,5 +1,4 @@
-# openSUSEWithCinnamonAndUnEncryptedGrubGuide
-A guide on how to install openSUSE Tumbleweed with up-to-date Cinnamon Desktop Environment, an Unencrypted Grub Bootloader, and Encrypted Root Partition
+# A guide on how to install OpenSUSE Tumbleweed with up-to-date Cinnamon Desktop Environment, an Unencrypted Grub Bootloader, and Encrypted Root Partition 
 
 # Preamble
 
