@@ -126,9 +126,13 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 27) Run each of these commands below in order, remember you can paste into the terminal with Control+Shift+V. The first `dd` command will take quite a while to complete, be patient and don't panic.
 
 `sudo dd if=/dev/zero of=/swapfile bs=1M count=$(($SIZE * 1024))`
+
 `sudo chmod 0600 /swapfile`
+
 `sudo mkswap /swapfile`
+
 `sudo sed -i '/swap/{s/^/#/}' /etc/fstab`
+
 `sudo tee -a /etc/fstab<<<"/swapfile  none  swap  sw 0  0"`
 
 
