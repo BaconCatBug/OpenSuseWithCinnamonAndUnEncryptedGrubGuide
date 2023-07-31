@@ -87,6 +87,10 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 # The Return of Cinnamon's Revenge: The Tweakening - Armageddon
 
+## Save your Eyeballs Here
+
+* Assuming you're like me and prefer to not have your eyeballs burnt out when using your PC, you can now set the Cinnamon theme to a darker hue. Open the menu and search for *Themes*
+
 16) Close the Welcome Window. Click the Activities button in the top left and open Firefox. Go to https://software.opensuse.org/package/cinnamon and scroll down to the Tumbleweed header. Click **Show Community Package** and click **Expert Download** for the *home:Dead_Mozay:cinnamon* entry.
 
 ![][Software]
@@ -136,9 +140,11 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 `sudo tee -a /etc/fstab<<<"/swapfile  none  swap  sw 0  0"`
 
 
-xx) Run the command `sudo zypper dup`, let it all install. Then reboot.
+28) Run the command `sudo zypper -n dup`, let it all install. Then reboot.
 
-xx) And that should be all. You can now enjoy Cinnamon on openSUSE with a more user friendly encryption scheme.
+29) And that should be all. You can now enjoy Cinnamon on openSUSE with a more user friendly encryption scheme. My personal favourite applets are **Panel Launchers** by *panel-launchers@cinnamon.org*, **CobiWindowList** by *windowlist@cobinja.de*, **Collapsible Systray** by *collapsible-systray@feuerfuchs.eu*, and **Bash Sensors**.
+
+Take the time to customise the Nemo interface, the main Menu interface, and the panels. If you wish for a Chromium based browser rather than Firefox, I recommend Vivaldi (which can be installed in the terminal by `opi vivaldi`).
 
 [Installation]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/1-Installation.png?raw=true 
 [Language]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/2-Language.png?raw=true 
