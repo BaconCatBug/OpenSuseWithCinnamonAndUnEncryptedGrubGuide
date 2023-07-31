@@ -48,7 +48,7 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 ![][Existing]
 
-9) Delete any partitions from the drive you're going to install on if they exist. Click on the drive you're going to install on, then 
+9) Delete any partitions from the drive you're going to install on if they exist. Click on the drive you're going to install on, then click **Add Partition**.
 
 ![][EmptyDrive]
 
