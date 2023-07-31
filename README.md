@@ -7,8 +7,6 @@ openSUSE Tumbleweed is a great distro, but is a little rough around the edges fo
 
 Instead, what we will do is encrypt the root partition of your installation via LUKS which will prompt you for a password *after* grub has done its thing.
 
-One consequence of this is that
-
 Another issue (which admittedly is a personal issue) is that while it's *technically* possible to install Cinnamon while in the install wizard, the official repositories are hopelessly out of date, and cause issues if you try to upgrade it via the community package after the fact. I like Cinnamon, a lot, thus this guide will show you how to install it. Feel free to skip this part if you want one of the default Gnome, KDE, or XFCE desktop environments.
 
 Finally, we will go over the process of enabling hardware accelerated decoding for AMD GPUs that utilise the mesa driver stack. It's a lot simpler than on something like Fedora and in my personal experience a lot less likely to break.
@@ -19,15 +17,15 @@ Note: If you want to try this out via a Virtual Machine suite (I recommend gnome
 
 Also Note: While I will be comprehensive, I will assume you know how to do some basic things, such as plugging in a USB stick, booting to said USB stick, how to use a mouse and keyboard, etc. :P
 
-Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it has a 64bit CPU and supports and is in UEFI boot mode. 
+Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it has an x86_64 (aka a 64bit) CPU, supports UEFI and is in UEFI boot mode. 
 
 1) Download the latest openSUSE Tumbleweed **Network Image** if you'll have internet access while installing (e.g. it's got an ethernet cable). Otherwise grab the **Offline Image**. At the time of writing they can be found at https://get.opensuse.org/tumbleweed/
 
  You want the *Intel or AMD 64-bit desktops, laptops, and servers (x86_64)* images. If you don't need this one, you'll know, and probably won't need this guide.
  
 2) Grab a USB stick of some description that you can afford to format and put the ISO onto the USB stuck using your favourite method of doing so. I personally recommend Ventoy https://www.ventoy.net/
-3) Boot to the USB Stick, select the ISO, and wait for the installer to load.
 
+3) Boot to the USB Stick, select the ISO, and wait for the installer to load.
 
 # The Installation
 
@@ -87,10 +85,6 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 # The Return of Cinnamon's Revenge: The Tweakening - Armageddon
 
-## Save your Eyeballs Here
-
-* Assuming you're like me and prefer to not have your eyeballs burnt out when using your PC, you can now set the Cinnamon theme to a darker hue. Open the menu and search for *Themes*
-
 16) Close the Welcome Window. Click the Activities button in the top left and open Firefox. Go to https://software.opensuse.org/package/cinnamon and scroll down to the Tumbleweed header. Click **Show Community Package** and click **Expert Download** for the *home:Dead_Mozay:cinnamon* entry.
 
 ![][Software]
@@ -121,6 +115,8 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 ![][OpiCodecs]
 
+---
+
 24) ***OPTIONAL BUT RECCOMENDED*** We will now set up a Swap file to act as a Swap partition, to act as overflow if your RAM fills up. Conventional Wisdom is to make the Swap file the same size as the amount of RAM you have, but you can set it to whatever size you want really.
 
 25) Run the command `df / -h` and see how much space you have under the *Avail* column. For obvious reasons, don't set the swap file bigger than this.
@@ -139,12 +135,26 @@ Also, Also Note: This guide assumes you have a somewhat modern hardware i.e. it 
 
 `sudo tee -a /etc/fstab<<<"/swapfile  none  swap  sw 0  0"`
 
+---
 
 28) Run the command `sudo zypper -n dup`, let it all install. Then reboot.
 
 29) And that should be all. You can now enjoy Cinnamon on openSUSE with a more user friendly encryption scheme. My personal favourite applets are **Panel Launchers** by *panel-launchers@cinnamon.org*, **CobiWindowList** by *windowlist@cobinja.de*, **Collapsible Systray** by *collapsible-systray@feuerfuchs.eu*, and **Bash Sensors**.
 
 Take the time to customise the Nemo interface, the main Menu interface, and the panels. If you wish for a Chromium based browser rather than Firefox, I recommend Vivaldi (which can be installed in the terminal by `opi vivaldi`).
+
+# Save your Eyeballs Here
+
+Assuming you're like me and prefer to not have your eyeballs burnt out when using your PC, you can now set the Cinnamon theme to a darker hue. Open the menu and search for *Themes*. Set each of the options to your liking, then go to the *Settings* tab at the top and set your Dark Mode, Icon, and Scrollbar settings to your liking.
+
+If you are using a dark mode theme, you should also run the command `gsettings set org.gnome.desktop.interface color-scheme prefer-dark` to allow any explicitly GTK themed apps to be in dark mode.
+
+# Remove useless Power Options
+
+If you wish to remove the Suspend, Sleep, and Hibernate options that may or may not appear when you press the Shut Down button, you can run the following to disable these services.
+
+`sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target`
+
 
 [Installation]:		https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/1-Installation.png?raw=true 
 [Language]:			https://github.com/BaconCatBug/OpenSuseWithCinnamonAndUnEncryptedGrubGuide/blob/main/Images/2-Language.png?raw=true 
